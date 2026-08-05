@@ -30,7 +30,7 @@ color:#d0d0d0;
 
 
 .pagina-projetos .container{
-   
+
 max-width:1200px;
 margin:auto;
 padding:80px 20px;
@@ -151,7 +151,7 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
-    
+
 
 :root {
   --preto: #000000;        /* Preto */
@@ -171,7 +171,7 @@ body {
 
 
 .navegação {
-    position: fixed; 
+    position: fixed;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.6);
@@ -181,7 +181,7 @@ body {
 }
 
 .menu {
-    
+
      display: flex;
      justify-content: center;
      list-style: none;
@@ -205,7 +205,7 @@ body {
     left: 0;
     bottom: 0;
     background: linear-gradient(90deg, var(--roxo-neon), var(--roxo-neon));
-    transition: width 0.4s ease; 
+    transition: width 0.4s ease;
 }
 
 .menu-link:hover::after {
@@ -230,21 +230,21 @@ body {
     -webkit-text-fill-color: transparent;
 
     animation: brilho 4s linear infinite;
-    
+
 }
 
 @keyframes brilho{
     0%{background-position:0%}
     100%{background-position:200%}
 }
-   
+
 
 /* seção */
 .hero{
     position:relative;
     height:100vh;
     min-height:100vh;
-    
+
 }
 
 /* SVG */
@@ -267,7 +267,7 @@ body {
         transform: translateX(-50%);
     }
 }
-   
+
 
 .waves path{
     fill:none;
@@ -281,7 +281,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-   
+
 }
 
 
@@ -289,8 +289,8 @@ img{
     width:400px;
 }
 
-.título-principal {    
-                                     /* PRINCIPAL- Bem-Vindo á AngelMind */   
+.título-principal {
+                                     /* PRINCIPAL- Bem-Vindo á AngelMind */
     height: 100vh;
     transform: translateY(-45px);
     position: relative;
@@ -299,25 +299,25 @@ img{
     align-items: center;
     text-align: center;
     flex-direction: column;
-  
+
 }
 
-.sub-titulo { 
+.sub-titulo {
     font-family: 'Inter', sans-serif;
     font-size:20px;
-    color:var(--branco); 
+    color:var(--branco);
     font-size: 1.0rem;
     margin-top: 15px;
     text-align: center;
 }
 
-.sobre-titulo {        
+.sobre-titulo {
                                         /* SUB-TITULO- Tecnologia avançada aplicada à análise de dados, automação de processos e geração de inteligência estratégica para organizações modernas. */
     font-size: 1%.5rem;
     color: var(--branco);
     text-align: center;
     margin-bottom: 30px;
-    
+
 }
 
 .bloco{
@@ -329,13 +329,13 @@ img{
     gap: 10px;
     padding: 60px;
 }
- 
+
 
 .texto-tec {                         /* TEXTO- Nossa tecnologia foi desenvolvida para transformar dados */
     flex: 1;
     color: var(--branco);
     font-size: 0.9rem;
-   
+
 }
 
 .sobre-titulo {
@@ -361,8 +361,8 @@ img{
     width: 300px;
     max-width: 90%;
     height: auto;
-    
-   
+
+
 }
 
 .imagem-section{
@@ -435,7 +435,7 @@ background-repeat: no-repeat;
 }
 
 .titulo-aplicações {
-    
+
   font-family: 'Poppins', sans-serif;
 
   font-size: 48px;
@@ -459,7 +459,7 @@ background-repeat: no-repeat;
     gap: 20px; /* espaço entre os cards */
     padding: 30px;
     justify-content: center;
- 
+
 }
 
 
@@ -478,7 +478,7 @@ background-repeat: no-repeat;
   border: 2px solid var(--roxo-neon);
 
   /* 🔹 brilho neon */
-  box-shadow: 
+  box-shadow:
     0 0 10px rgba(255, 0, 150, 0.5),
     0 0 20px rgba(255, 0, 150, 0.3),
     0 0 40px rgba(255, 0, 150, 0.2);
@@ -557,7 +557,7 @@ background-repeat: no-repeat;
     padding-left: 10px; /* espaço para os marcadores */
     list-style-position: outside;
   list-style: none;
- 
+
 }
 
 /* 🔹 itens */
@@ -721,4 +721,94 @@ text-align:center;
 
 .page-texto p{
 margin-bottom:15px;
+}
+
+/* ===================================================
+   Seção destaque — ContaGrão (projeto em destaque)
+   =================================================== */
+
+.contagrao-destaque{
+    margin-top: 150px;
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.contagrao-destaque .rotulo{
+    font-family: 'Inter', sans-serif;
+    color: var(--verde-lima);
+    letter-spacing: 2px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.contagrao-destaque h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 34px;
+    font-weight: 900;
+    color: var(--branco);
+    margin-bottom: 20px;
+}
+
+.contagrao-destaque p{
+    max-width: 650px;
+    margin: 0 auto 35px auto;
+    color: #d0d0d0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.contagrao-card{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border: 2px solid var(--roxo-neon);
+    box-shadow:
+        0 0 10px rgba(255,0,150,0.35),
+        0 0 25px rgba(255,0,150,0.2);
+}
+
+.contagrao-card .tags{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.contagrao-card .tag{
+    font-size: 12px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid var(--verde-lima);
+    color: var(--verde-lima);
+}
+
+.btn-contagrao{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 14px 32px;
+    background: var(--roxo-neon);
+    color: var(--branco);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-contagrao:hover{
+    background: #c94cff;
+    box-shadow: 0 0 15px #c94cff;
+}
+
+@media (max-width:700px){
+    .contagrao-destaque{
+        padding: 60px 24px;
+    }
+    .contagrao-card{
+        padding: 28px;
+    }
 }
