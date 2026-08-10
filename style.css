@@ -811,9 +811,12 @@ margin-bottom:15px;
     .contagrao-card{
         padding: 28px;
     }
+}
+
 .logo{
     mix-blend-mode: screen;
 }
+
 /* ===================================================
    Redesign — seção Impacto (mais limpa e responsiva)
    =================================================== */
@@ -912,4 +915,4 @@ margin-bottom:15px;
     margin:0 auto;
     max-width:480px;
   }
-
+}
