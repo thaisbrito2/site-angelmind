@@ -814,4 +814,103 @@ margin-bottom:15px;
 .logo{
     mix-blend-mode: screen;
 }
+/* ===================================================
+   Redesign — seção Impacto (mais limpa e responsiva)
+   =================================================== */
+
+.impacto{
+  max-width:1200px;
+  margin:180px auto 0;
+  display:grid;
+  grid-template-columns:1.1fr 0.9fr;
+  gap:60px;
+  align-items:center;
+  padding:0 40px;
+}
+
+.lado-esquerdo{
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+}
+
+.titulo-impacto{
+  margin:0;
+  font-size:clamp(26px,3.5vw,36px);
+  max-width:100%;
+  text-align:left;
+}
+
+.lado-esquerdo img{
+  width:100%;
+  max-width:520px;
+  filter:drop-shadow(0 20px 40px rgba(148,0,211,0.3));
+}
+
+.lado-direito{
+  width:100%;
+  height:auto;
+  margin:0;
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(10px);
+  border:1px solid var(--roxo-neon);
+  border-radius:16px;
+  box-shadow:
+    0 0 20px rgba(148,0,211,0.25),
+    0 0 40px rgba(148,0,211,0.1);
+  padding:40px 32px;
+  align-items:flex-start;
+  text-align:left;
+}
+
+.titulo-lado-direito{
+  font-family:'Poppins', sans-serif;
+  font-size:22px;
+  margin-bottom:24px;
+}
+
+.lado-direito ul{
+  display:flex;
+  flex-direction:column;
+  gap:0;
+}
+
+.lado-direito li{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  padding:14px 0;
+  border-bottom:1px solid rgba(255,255,255,0.08);
+  font-size:15px;
+}
+
+.lado-direito li:last-child{
+  border-bottom:none;
+}
+
+.lado-direito li::before{
+  content:"✓";
+  color:var(--verde-lima);
+  font-weight:700;
+  margin-top:2px;
+}
+
+@media (max-width:900px){
+  .impacto{
+    grid-template-columns:1fr;
+    text-align:center;
+    padding:0 24px;
+  }
+  .lado-esquerdo{
+    align-items:center;
+  }
+  .titulo-impacto{
+    text-align:center;
+  }
+  .lado-direito{
+    margin:0 auto;
+    max-width:480px;
+  }
+}
 }
