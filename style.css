@@ -811,4 +811,7 @@ margin-bottom:15px;
     .contagrao-card{
         padding: 28px;
     }
+.logo{
+    mix-blend-mode: screen;
+}
 }
