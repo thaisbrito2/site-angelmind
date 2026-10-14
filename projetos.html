@@ -2,23 +2,36 @@
 <html lang="pt-br">
 
 <head>
-<meta charset="UTF-8">    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Projetos</title>
+<link rel="icon" type="image/png" href="img/Logo AngelMind sem escrita.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 
 
 <body class="pagina-projetos">
+
+    <header class="topo-interno">
+        <a href="index.html" class="nav-marca" aria-label="AngelMind, página inicial">
+            <img src="img/Logo AngelMind sem escrita.png" alt="">
+            <span>AngelMind</span>
+        </a>
+        <a href="index.html" class="voltar">← Voltar ao início</a>
+    </header>
+
     <section class="container">
 
         <h1 class="titulo">Soluções Tecnológicas</h1>
-            <p class="introdução">
+        <p class="introdução">
             Explore as principais soluções tecnológicas e áreas de atuação desenvolvidas pela nossa equipe.
-            </p>    
+        </p>
 
 
         <div class="grid">
-
 
         <div class="card" onclick="toggleCard(this)">
         <h2>Desenvolvimento de plataformas digitais, software e sistemas inteligentes</h2>
@@ -167,33 +180,27 @@
         </div>
         </div>
 
+        </div>
+    </section>
 
-</div>
-</section>
+    <footer class="footer">
+        <div class="footer-conteudo">
+            <p class="footer-logo">
+                <img src="img/Logo AngelMind sem escrita.png" alt="">
+                AngelMind
+            </p>
+            <div class="footer-links">
+                <a href="privacidade.html">Política de Privacidade</a>
+                <a href="termos.html">Termos de Uso</a>
+                <a href="index.html#Contato">Contato</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+            <p class="footer-direitos">© 2026 AngelMind. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
-<script>
+<script src="script.js"></script>
 
-function toggleCard(card){
-
-const conteudo = card.querySelector(".conteudo-card");
-
-if(card.classList.contains("ativo")){
-
-conteudo.style.height = "0px";
-card.classList.remove("ativo");
-
-}else{
-
-conteudo.style.height = conteudo.scrollHeight + "px";
-card.classList.add("ativo");
-
-}
-
-}
-
-</script>
-
-
-
-        </body>
-        </html>
+</body>
+</html>

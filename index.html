@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AngelMind</title>
+    <meta name="description" content="Desenvolvendo soluções avançadas de tecnologia e inteligência artificial">
+    <meta name="theme-color" content="#000000">
+    <link rel="icon" type="image/png" href="img/Logo AngelMind sem escrita.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <div class="progresso" aria-hidden="true"></div>
 
+    <nav class="navegação" aria-label="Navegação principal">
+        <a href="#Home" class="nav-marca" aria-label="AngelMind, início">
+            <img src="img/Logo AngelMind sem escrita.png" alt="">
+            <span>AngelMind</span>
+        </a>
 
-    <nav class="navegação">
-        <ul class="menu">
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+            <span></span><span></span><span></span>
+        </button>
+
+        <ul class="menu" id="menu">
             <li>
                 <a href="#Home" class="menu-link">Home</a>
             </li>
@@ -33,162 +43,158 @@
                 <a href="projetos.html" class="menu-link">Projetos</a>
             </li>
             <li>
-                <a href="#Contato" class="menu-link">Contato</a>
+                <a href="#Contato" class="menu-link menu-link-destaque">Contato</a>
             </li>
         </ul>
-
     </nav>
 
     <section class="hero">
-        <div class="particulas"></div>
+        <canvas class="rede-neural" aria-hidden="true"></canvas>
+        <div class="particulas" aria-hidden="true"></div>
 
-    <svg class="waves" viewBox="0 0 1440 320" preserveAspectRatio="none">
-        <defs>
-            <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#ff00ff"/>
-                <stop offset="100%" stop-color="#00ffff"/>
-            </linearGradient>
-        </defs>
+        <svg class="waves" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true">
+            <defs>
+                <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#ff00ff"/>
+                    <stop offset="100%" stop-color="#00ffff"/>
+                </linearGradient>
+            </defs>
 
-        <path fill="none" stroke="url(#grad)" stroke-width="2"
-            d="M0,200 C300,100 600,300 900,200 C1200,100 1440,250 1440,250">
-        </path>
+            <path fill="none" stroke="url(#grad)" stroke-width="2"
+                d="M0,200 C300,100 600,300 900,200 C1200,100 1440,250 1440,250">
+            </path>
 
-        <path fill="none" stroke="url(#grad)" stroke-width="1"
-            d="M0,220 C300,120 600,320 900,220 C1200,120 1440,270 1440,270">
-        </path>
-    </svg>
+            <path fill="none" stroke="url(#grad)" stroke-width="1"
+                d="M0,220 C300,120 600,320 900,220 C1200,120 1440,270 1440,270">
+            </path>
+        </svg>
 
-
-
-    <main id="Home" class="título-principal">
-        <img src="img/Logo AngelMind sem escrita.png" class="logo" alt="Logo AngelMind">
-        <h1 class="titulo-brilho"> Seja Bem-Vindo á AngelMind. </h1>
-        <p class="sub-titulo"> Desenvolvendo soluções avançadas de tecnologia e inteligência artificial </p>
+        <main id="Home" class="título-principal">
+            <div class="logo-wrap">
+                <span class="logo-halo" aria-hidden="true"></span>
+                <img src="img/Logo AngelMind sem escrita.png" class="logo" alt="Logo AngelMind">
+            </div>
+            <h1 class="titulo-brilho">Seja Bem-Vindo á AngelMind.</h1>
+            <p class="sub-titulo">Desenvolvendo soluções avançadas de tecnologia e inteligência artificial</p>
         </main>
+
+        <a href="#Tecnologia" class="rolar" aria-label="Rolar para Tecnologia">
+            <span></span>
+        </a>
     </section>
 
 
+    <section class="bloco" id="Tecnologia">
+        <div class="container bloco-grid">
+            <div class="texto-tec revelar">
+                <h2 class="sobre-titulo">Tecnologia avançada aplicada à análise de dados, automação de processos e geração de inteligência estratégica para organizações modernas.</h2>
 
+                <div class="tecnologia-paragrafo">
+                    <p>Nossa tecnologia foi desenvolvida para transformar dados em conhecimento estratégico. Utilizamos soluções avançadas de desenvolvimento de software, inteligência artificial e análise de dados para resolver problemas complexos enfrentados por organizações modernas.</p>
 
-    <section class="bloco" id="Tecnologia" >
-        <div class="texto-tec">
-            <h2 class="sobre-titulo">Tecnologia avançada aplicada à análise de dados, automação de processos e geração de inteligência estratégica para organizações modernas.</h2>
+                    <p>A plataforma integra diferentes fontes de informação e aplica algoritmos inteligentes capazes de processar grandes volumes de dados com rapidez e precisão. Isso permite gerar insights relevantes que apoiam a tomada de decisões estratégicas.</p>
 
-                 <p class="tecnologia-paragrafo">
+                    <p>Com uma arquitetura tecnológica moderna e escalável, nossa solução foi projetada para atender desde pequenas organizações até grandes operações, garantindo alto desempenho, segurança e flexibilidade de integração com outros sistemas.</p>
 
-        Nossa tecnologia foi desenvolvida para transformar dados em conhecimento estratégico. Utilizamos soluções avançadas de desenvolvimento de software, inteligência artificial e análise de dados para resolver problemas complexos enfrentados por organizações modernas.
-
-A plataforma integra diferentes fontes de informação e aplica algoritmos inteligentes capazes de processar grandes volumes de dados com rapidez e precisão. Isso permite gerar insights relevantes que apoiam a tomada de decisões estratégicas.
-
-Com uma arquitetura tecnológica moderna e escalável, nossa solução foi projetada para atender desde pequenas organizações até grandes operações, garantindo alto desempenho, segurança e flexibilidade de integração com outros sistemas.
-
-Nosso objetivo é utilizar a tecnologia como ferramenta de transformação, criando soluções eficientes que aumentem produtividade, otimizem processos e ampliem o uso inteligente das informações.
-
-                 </p>
-         </div>
-
-
-    <div class="imagem-tec">
-        <img src="img/img2.png" alt="Tecnologia" >
-    </div>
-
-    </section>
-
-
- <section class="imagem-section">
-    <div class="container-desafio">
-
-    <section id="problema" class="problema">
-        <h1 class="titulo-desafio">Desafios à solucionar</h1>
-            <ul>
-
-                <li>Grandes volumes de dados sem análise eficiente</li>
-
-                <li>Processos complexos e pouco automatizados</li>
-
-                <li>Dificuldade de aplicar inteligência artificial</li>
-
-                <li>Falta de ferramentas inteligentes para decisão</li>
-
-            </ul>
-    </section>
-
-
-    <section id="Soluções" class="Soluções">
-        <h4 class="titulo-soluções">Soluções</h4>
-            <p>
-
-                Desenvolvemos plataformas tecnológicas baseada em inteligência artificial, análise avançada de dados e automação de processos, projetadas para transformar grandes volumes de informação em conhecimento estratégico para tomada de decisão.
-
-As soluções integram múltiplas fontes de dados, permitindo a coleta, organização e análise inteligente de informações em tempo real. Utilizamos algoritmos avançados de machine learning para identificar padrões, prever tendências e gerar insights que auxiliam governos e empresas a otimizar suas operações e aumentar sua eficiência.
-
-            </p>
-    </section>
-
-
-    <section id="Inovação" class="Inovação">
-
-        <h5 class="titulo-inovação">Diferenciais tecnológicos</h5>
-            <ul>
-
-                <li>Aplicação de inteligência artificial em problemas reais</li>
-
-                <li>Integração com múltiplas fontes de dados</li>
-
-                <li>Algoritmos de machine learning personalizados</li>
-
-                <li>Arquitetura escalável em cloud</li>
-
-            </ul>
-    </section>
-
-
-    <section id="aplicações" class="aplicações">
-
-        <h6 class="titulo-aplicações" > Aplicações da tecnologia </h6>
-        <div class="cards">
-
-            <div class="card">
-            <h3>Healthtech</h3>
-            <p>Análise de dados clínicos e apoio à decisão médica</p>
-         </div>
-
-
-        <div class="card">
-            <h3>GovTech</h3>
-            <p>Monitoramento de políticas públicas e indicadores</p>
-        </div>
-
-        <div class="card">
-            <h3>AgroTech</h3>
-            <p>Tecnologias avançadas para aumentar a eficiência, a produtividade e a sustentabilidade no setor agropecuário</p>
-        </div>
-
-        <div class="card">
-            <h3>Deep Tech</h3>
-            <p>Pesquisa e Desenvolvimento, Ciência e predição, inovação na Ciência aplicada com Inteligência Artificial de última geração</p>
+                    <p>Nosso objetivo é utilizar a tecnologia como ferramenta de transformação, criando soluções eficientes que aumentem produtividade, otimizem processos e ampliem o uso inteligente das informações.</p>
+                </div>
             </div>
 
+            <div class="imagem-tec revelar">
+                <div class="orbita" aria-hidden="true"><span></span><span></span></div>
+                <img src="img/img2.png" alt="Tecnologia">
+            </div>
         </div>
-
     </section>
 
-    </div>
- </section>
 
-    <section id="impacto" class="impacto">
+    <section class="imagem-section">
+        <div class="container container-desafio">
+
+            <div class="desafio-solucao">
+                <section id="problema" class="problema painel revelar">
+                    <h2 class="titulo-desafio">Desafios à solucionar</h2>
+                    <ul>
+                        <li>Grandes volumes de dados sem análise eficiente</li>
+                        <li>Processos complexos e pouco automatizados</li>
+                        <li>Dificuldade de aplicar inteligência artificial</li>
+                        <li>Falta de ferramentas inteligentes para decisão</li>
+                    </ul>
+                </section>
+
+                <div class="ponte" aria-hidden="true">
+                    <span class="ponte-linha"></span>
+                    <span class="ponte-pulso"></span>
+                </div>
+
+                <section id="Soluções" class="Soluções painel painel-destaque revelar">
+                    <h2 class="titulo-soluções">Soluções</h2>
+                    <p>Desenvolvemos plataformas tecnológicas baseada em inteligência artificial, análise avançada de dados e automação de processos, projetadas para transformar grandes volumes de informação em conhecimento estratégico para tomada de decisão.</p>
+                    <p>As soluções integram múltiplas fontes de dados, permitindo a coleta, organização e análise inteligente de informações em tempo real. Utilizamos algoritmos avançados de machine learning para identificar padrões, prever tendências e gerar insights que auxiliam governos e empresas a otimizar suas operações e aumentar sua eficiência.</p>
+                </section>
+            </div>
 
 
-        <div class="lado-esquerdo">
-            <h1 class="titulo-impacto">Impacto da tecnologia</h1>
+            <section id="Inovação" class="Inovação">
+                <h2 class="titulo-inovação revelar">Diferenciais tecnológicos</h2>
+                <ul class="diferenciais">
+                    <li class="revelar">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6M12 3v3M5 10a7 7 0 0 1 14 0v3a7 7 0 0 1-14 0z"/><circle cx="9.5" cy="11.5" r="1"/><circle cx="14.5" cy="11.5" r="1"/><path d="M9.5 15.5h5"/></svg>
+                        Aplicação de inteligência artificial em problemas reais
+                    </li>
+                    <li class="revelar">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="7" ry="2.5"/><path d="M5 5v6c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5V5M5 11v6c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-6"/></svg>
+                        Integração com múltiplas fontes de dados
+                    </li>
+                    <li class="revelar">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 7l3.4 3.6M7 17l3.4-3.6M13.6 10.6 17 7M13.6 13.4 17 17"/></svg>
+                        Algoritmos de machine learning personalizados
+                    </li>
+                    <li class="revelar">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a4.5 4.5 0 0 1-.6-8.96A6 6 0 0 1 18 8.5a4.75 4.75 0 0 1-.5 9.5z"/><path d="M12 11v5M9.5 13.5 12 11l2.5 2.5"/></svg>
+                        Arquitetura escalável em cloud
+                    </li>
+                </ul>
+            </section>
+
+
+            <section id="aplicações" class="aplicações">
+                <h2 class="titulo-aplicações revelar">Aplicações da tecnologia</h2>
+                <div class="cards">
+                    <div class="card revelar">
+                        <h3>Healthtech</h3>
+                        <p>Análise de dados clínicos e apoio à decisão médica</p>
+                    </div>
+
+                    <div class="card revelar">
+                        <h3>GovTech</h3>
+                        <p>Monitoramento de políticas públicas e indicadores</p>
+                    </div>
+
+                    <div class="card revelar">
+                        <h3>AgroTech</h3>
+                        <p>Tecnologias avançadas para aumentar a eficiência, a produtividade e a sustentabilidade no setor agropecuário</p>
+                    </div>
+
+                    <div class="card revelar">
+                        <h3>Deep Tech</h3>
+                        <p>Pesquisa e Desenvolvimento, Ciência e predição, inovação na Ciência aplicada com Inteligência Artificial de última geração</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </section>
+
+
+    <section id="impacto" class="impacto container">
+        <div class="lado-esquerdo revelar">
+            <h2 class="titulo-impacto">Impacto da tecnologia</h2>
             <img src="img/img6.png" alt="Profissionais tecnologicos">
         </div>
 
-
-        <div class="lado-direito">
+        <div class="lado-direito revelar">
             <h3 class="titulo-lado-direito">Resultados do Sistema</h3>
-
             <ul>
                 <li>Aumento da eficiência operacional</li>
                 <li>Decisões baseadas em dados</li>
@@ -196,131 +202,96 @@ As soluções integram múltiplas fontes de dados, permitindo a coleta, organiza
                 <li>Melhoria da gestão de informações</li>
             </ul>
         </div>
-
     </section>
 
 
-    <section id="equipe">
-        <h2>Equipe</h2>
-        <p>
-            Especialistas em tecnologia da informação,
-cientistas de dados e desenvolvedores de software.
-        </p>
-
-    </section>
-
-
-    <section id="ContaGrao" class="contagrao-destaque">
-        <p class="rotulo">Projeto em destaque</p>
-        <h2>ContaGrão® — Inteligência Financeira para o Agronegócio</h2>
-        <p>
-            Uma iniciativa da AngelMind: plataforma SaaS baseada em Inteligência Artificial que ajuda
-            produtores, cooperativas e instituições financeiras a antecipar riscos financeiros,
-            proteger margens e aumentar a rentabilidade no agronegócio.
-        </p>
-        <div class="contagrao-card">
-            <div class="tags">
-                <span class="tag">IA Proprietária</span>
-                <span class="tag">Modelo SaaS</span>
-                <span class="tag">Agronegócio</span>
-            </div>
-            <a href="contagrao/index.html" class="btn-contagrao">Conhecer o ContaGrão →</a>
+    <section id="equipe" class="equipe">
+        <div class="container revelar">
+            <h2>Equipe</h2>
+            <p>Especialistas em tecnologia da informação, cientistas de dados e desenvolvedores de software.</p>
         </div>
     </section>
 
 
- <section id="Contato" class="Contato">
-
-   <h2 class="titulo-contato">Entre em Contato</h2>
-
-  <div class="container-contato">
-
-   <form id="form-contato" class="formulario">
-
-        <h3>Envie uma mensagem</h3>
-
-            <input type="text" name="user_name" placeholder="Seu nome" required>
-
-            <input type="email" name="email" placeholder="Seu e-mail" required>
-
-            <textarea name="message" placeholder="Sua mensagem..." required></textarea>
-
-            <button type="submit">Enviar por Email</button>
-
-            <button type="button" id="btn-whatsapp">Enviar pelo WhatsApp</button>
-
-    </form>
-
-  </div>
-
-</section>
+    <section id="ContaGrao" class="contagrao-destaque">
+        <div class="container contagrao-grid">
+            <div class="contagrao-texto revelar">
+                <p class="rotulo">Projeto em destaque</p>
+                <h2>ContaGrão® — Inteligência Financeira para o Agronegócio</h2>
+                <p>
+                    Uma iniciativa da AngelMind: plataforma SaaS baseada em Inteligência Artificial que ajuda
+                    produtores, cooperativas e instituições financeiras a antecipar riscos financeiros,
+                    proteger margens e aumentar a rentabilidade no agronegócio.
+                </p>
+            </div>
+            <div class="contagrao-card revelar">
+                <div class="tags">
+                    <span class="tag">IA Proprietária</span>
+                    <span class="tag">Modelo SaaS</span>
+                    <span class="tag">Agronegócio</span>
+                </div>
+                <a href="contagrao/index.html" class="btn-contagrao">Conhecer o ContaGrão →</a>
+            </div>
+        </div>
+    </section>
 
 
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <section id="Contato" class="Contato">
+        <div class="container">
+            <h2 class="titulo-contato revelar">Entre em Contato</h2>
 
-<script>
-/* 🔥 INICIALIZA EMAILJS */
-emailjs.init("a2tPiQ06DpsnR8-Ik");
+            <div class="container-contato revelar">
+                <form id="form-contato" class="formulario">
+                    <h3>Envie uma mensagem</h3>
 
-/* 📩 ENVIO DE EMAIL */
-document.getElementById("form-contato").addEventListener("submit", function(e) {
-  e.preventDefault();
+                    <label class="campo">
+                        <span class="sr-only">Seu nome</span>
+                        <input type="text" name="user_name" placeholder="Seu nome" autocomplete="name" required>
+                    </label>
 
-  emailjs.sendForm("service_mqb7qmo", "template_dwxozse", this)
-    .then(function() {
-      alert("Email enviado com sucesso! 🚀");
-    }, function(error) {
-      alert("Erro ao enviar email...");
-    });
+                    <label class="campo">
+                        <span class="sr-only">Seu e-mail</span>
+                        <input type="email" name="email" placeholder="Seu e-mail" autocomplete="email" required>
+                    </label>
 
-  this.reset();
-});
+                    <label class="campo">
+                        <span class="sr-only">Sua mensagem</span>
+                        <textarea name="message" placeholder="Sua mensagem..." required></textarea>
+                    </label>
 
+                    <div class="botoes">
+                        <button type="submit" class="btn btn-primario">Enviar por Email</button>
+                        <button type="button" id="btn-whatsapp" class="btn btn-secundario">Enviar pelo WhatsApp</button>
+                    </div>
 
-/* 📱 WHATSAPP */
-
-document.getElementById("btn-whatsapp").addEventListener("click", function() {
-
-const nome = document.querySelector('input[name="user_name"]').value;
-const mensagem = document.querySelector('textarea[name="message"]').value;
-
-const texto = `Olá, meu nome é ${nome}. ${mensagem}`;
-
-window.open(`https://wa.me/5567993205452?text=${encodeURIComponent(texto)}`);
-
-});
-
-</script>
+                    <p class="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </div>
+    </section>
 
 
+    <footer class="footer">
+        <div class="footer-conteudo">
+            <p class="footer-logo">
+                <img src="img/Logo AngelMind sem escrita.png" alt="">
+                AngelMind
+            </p>
 
-<script src="script.js"></script>
+            <div class="footer-links">
+                <a href="privacidade.html">Política de Privacidade</a>
+                <a href="termos.html">Termos de Uso</a>
+                <a href="#Contato">Contato</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
 
-
-
-<footer class="footer">
-
-    <div class="footer-conteudo">
-
-    <p class="footer-logo">AngelMind</p>
-
-    <div class="footer-links">
-    <a href="privacidade.html">Política de Privacidade</a>
-    <a href="termos.html">Termos de Uso</a>
-    <a href="#Contato">Contato</a>
-    <a href="#">Instagram</a>
-    <a href="#">LinkedIn</a>
-    </div>
-
-    <p class="footer-direitos">
-    © 2026 AngelMind. Todos os direitos reservados.
-
-    </p>
-
-</div>
-
-</footer>
+            <p class="footer-direitos">© 2026 AngelMind. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
