@@ -116,10 +116,19 @@ ul {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: var(--fonte-texto);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+/* Orbitron só nos títulos principais da página inicial */
+.titulo-inovação,
+.titulo-aplicações,
+.titulo-contato,
+.titulo-impacto {
   font-family: var(--fonte-display);
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
 }
 
 /* título de seção padrão */
@@ -1143,14 +1152,9 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-family: var(--fonte-display);
   font-size: 15px;
-  letter-spacing: 0.08em;
-}
-
-.footer-logo img {
-  width: 40px;
-  filter: drop-shadow(0 0 6px rgba(148, 0, 211, 0.6));
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 .footer-links {
@@ -1438,7 +1442,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .menu-link {
-    font-family: var(--fonte-display);
     font-size: 22px;
     padding: 12px 20px;
   }
